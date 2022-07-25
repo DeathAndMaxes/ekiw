@@ -1,0 +1,16 @@
+{
+  "name": "everyone-knows-its-wendy",
+  "version": "1.0.0",
+  "description": "Everyone Knows It's Wendy, Nucamp portfolio project",
+  "main": "index.html",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxwell Gough",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
