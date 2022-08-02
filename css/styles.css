@@ -1,0 +1,140 @@
+*::before, *, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", "Lobster", cursive;
+  font-weight: bolder; }
+
+h2 {
+  color: #236921; }
+
+header h2, header h4 {
+  color: #cef7d9; }
+
+.jumbotron {
+  margin: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, #5cdd66, #51c54d, #106b1f);
+  color: #2b412c; }
+
+.navbar {
+  background-color: #2b7972; }
+
+.tab-content {
+  border: 1px solid #DDD;
+  border-top: none;
+  padding: 10px; }
+
+#accordion a, a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.carousel {
+  border: none; }
+
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100; }
+
+#reserveModal .modal-header {
+  background-color: #17A2B8;
+  color: white; }
+  #reserveModal .modal-header .close {
+    color: white; }
+
+#loginModal .modal-header {
+  background-color: #e07de4;
+  color: #253634; }
+
+#navbar-toggler {
+  border: none; }
+
+.navbtn:focus {
+  box-shadow: none; }
+
+#navSearchIcon {
+  z-index: 999; }
+
+#loginButton {
+  background-color: #e07de4;
+  border: none;
+  z-index: 999; }
+  #loginButton a {
+    color: #253634; }
+
+#homeGallery {
+  background-color: #e07de4; }
+
+#storeShortcut {
+  text-align: center;
+  text-justify: center;
+  background-color: #e07de4;
+  color: #253634;
+  padding: 0.75rem; }
+
+.galleryPic {
+  padding: 0; }
+
+.gallery {
+  justify-content: center; }
+  .gallery .btn {
+    align-self: center;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-weight: bolder; }
+  .gallery .btn:active {
+    background-color: black; }
+
+.homeArticleText {
+  font-size: small;
+  color: white; }
+
+.homeArticleTitle {
+  color: white;
+  font-weight: bold; }
+
+.featuredArticle {
+  background-color: #2b7972; }
+  .featuredArticle a {
+    color: #e07de4;
+    font-weight: bolder;
+    font-size: small; }
+
+.socialFooter {
+  min-height: 70px; }
+  .socialFooter .btn-social-icon {
+    margin: 0 1rem;
+    border-radius: 50%;
+    padding: 1.2rem; }
+    .socialFooter .btn-social-icon i {
+      margin-top: 0.2rem;
+      position: absolute; }
+
+.footerInfo {
+  background-color: #e07de4; }
+  .footerInfo p {
+    color: white;
+    font-weight: bold;
+    font-size: small; }
+  .footerInfo a {
+    color: white;
+    text-decoration: underline; }
+  .footerInfo a:active {
+    color: black; }
+
+#copyrightStatement {
+  font-weight: lighter;
+  font-size: x-small; }

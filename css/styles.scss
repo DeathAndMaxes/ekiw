@@ -1,0 +1,204 @@
+// Color Variables
+$color-header: #236921;
+$color-header-pale: #cef7d9;
+$color-header-dark: rgb(43, 65, 44);
+$color-footer-dark: #d4f7dd;
+$color-footer-light: #FFFFFF;
+$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-gradient-light: #5cdd66;
+$color-gradient-mid: #51c54d;
+$color-gradient-dark: #106b1f;
+$color-navbar: #2b7972;
+$color-tab-border: #DDD;
+$color-teal: #17A2B8;
+$color-login-button: #e07de4;
+$color-login: #253634;
+
+// Font Variables
+$body-font: "Open Sans", sans-serif;
+$header-font: "Montserrat", "Lobster", cursive;
+
+*::before, *, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $body-font;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $header-font;
+    font-weight: bolder;
+}
+
+h2 {
+    color: $color-header;
+}
+
+header {
+    h2, h4 {
+        color: $color-header-pale;
+    }
+} 
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right, $color-gradient-light, $color-gradient-mid, $color-gradient-dark);
+    color: $color-header-dark;
+}
+
+.navbar {
+    background-color: $color-navbar;
+}
+
+.tab-content {
+    border: 1px solid $color-tab-border;
+    border-top: none;
+    padding: 10px;
+}
+
+#accordion a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.carousel-caption {
+    background-color: $color-black-transparent;
+}
+
+.carousel {
+    border: none;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
+
+#reserveModal {
+    .modal-header {
+        background-color: $color-teal;
+        color: white;
+        .close {
+            color: white;
+        }
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-login-button;
+        color: $color-login;
+    }
+}
+
+#navbar-toggler {
+    border: none;
+}
+
+.navbtn:focus {
+    box-shadow: none;
+}
+
+#navSearchIcon {
+    z-index: 999;
+}
+
+#loginButton {
+    background-color: $color-login-button;
+    border: none;
+    z-index: 999;
+    a {
+        color: $color-login;        
+    }
+}
+
+#homeGallery {
+    background-color: $color-login-button;
+}
+
+#storeShortcut {
+    text-align: center;
+    text-justify: center;
+    background-color: $color-login-button;
+    color: $color-login;
+    padding: 0.75rem;
+}
+
+.galleryPic {
+    padding: 0;
+}
+
+.gallery {
+    justify-content: center;
+    .btn {
+        align-self: center;
+        position: absolute;
+        z-index: 999;
+        background-color: $color-black-transparent;
+        border: none;
+        color: white;
+        font-weight: bolder;
+    }
+    .btn:active {
+        background-color: black;
+    }
+}
+
+.homeArticleText {
+    font-size: small;
+    color: white;
+}
+
+.homeArticleTitle {
+    color: white;
+    font-weight: bold;
+}
+
+.featuredArticle {
+    background-color: $color-navbar;
+    a {
+        color: $color-login-button;
+        font-weight: bolder;
+        font-size: small;
+    }
+}
+
+.socialFooter {
+    min-height: 70px;
+    .btn-social-icon {
+        margin: 0 1rem;
+        border-radius: 50%;
+        padding: 1.2rem;
+        i {
+            margin-top: 0.2rem;
+            position: absolute;
+        }
+    }
+}
+
+.footerInfo {
+    background-color: $color-login-button;
+    p {
+        color: white;
+        font-weight: bold;
+        font-size: small;
+    }
+    a {
+        color: white;
+        text-decoration: underline;
+    }
+    a:active {
+        color: black;
+    }
+}
+
+#copyrightStatement {
+    font-weight: lighter;
+    font-size: x-small;
+}
