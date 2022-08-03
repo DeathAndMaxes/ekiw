@@ -183,3 +183,15 @@ header h2, header h4 {
 @media only screen and (min-width: 1200px) {
   #navLogo {
     max-width: 225px; } }
+
+.productPicture {
+  border-radius: 10%; }
+
+.productName {
+  font-weight: bolder; }
+
+#customDisclaimer {
+  font-size: smaller; }
+
+.productItem a {
+  color: black; }

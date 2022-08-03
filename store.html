@@ -32,7 +32,7 @@
                 </div>
                 <!--Navbar Branding-->
                 <div class="text-center">
-                    <a class="navbar-brand mx-auto" href="#"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
+                    <a class="navbar-brand mx-auto" href="index.html"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
                 </div>
                 <!--Navbar Shopping Cart-->
                 <div>
@@ -51,8 +51,8 @@
                 </button>
             </form>
             <ul class="navbar-nav ml-sm-5">
-                <li class="nav-item col-8 ml-n2 active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
-                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="store.html"><i class="fa fa-shopping-bag fa-lg mr-2"></i> Shop</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
+                <li class="nav-item col-8 ml-n2 active"><a class="nav-link" href="#"><i class="fa fa-shopping-bag fa-lg mr-2"></i> Shop</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-photo fa-lg mr-2"></i> Gallery</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-newspaper-o fa-lg mr-2"></i> Blog</a></li>
             </ul>
@@ -104,77 +104,50 @@
 
     <div class="container">
 
-        <!--Product Carousel-->
+        <!--Breadcrumb Menu-->
         <div class="row">
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Shop</li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#">
-                            <img src="https://picsum.photos/2000" alt="Breadcrumb Trail Campground" class="d-block w-100" />
-                            <div class="carousel-caption">
-                                <h4>Handmade Resin Coasters</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="#">
-                            <img src="https://picsum.photos/2001" alt="React Lake Campground" class="d-block w-100" />
-                            <div class="carousel-caption">
-                                <h4>Gemstone Earrings</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
 
-        <!--Shop All Products-->
+        <!--Shop-->
         <div class="row">
-            <div class="col-12" id="storeShortcut">
-                <h4 class="mt-2">See All Available Products</h4>
+            <h3 class="col-12 text-center mt-5">BUY NOW</h3>
+            <div class="col-6 pr-0 productItem">
+                <a href="#">
+                    <img src="https://picsum.photos/200" alt="" class="img-fluid productPicture mx-auto d-block mt-4" style="max-width: 80%;" />
+                    <div class="text-center">
+                        <p class="mb-n1 mt-1 productName">Item Name</p>
+                        <p>$9.99</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6 pl-0 productItem">
+                <a href="#">
+                    <img src="https://picsum.photos/201" alt="" class="img-fluid productPicture mx-auto d-block mt-4" style="max-width: 80%;" />
+                    <div class="text-center">
+                        <p class="mb-n1 mt-1 productName">Item Name</p>
+                        <p>$9.99</p>
+                    </div>
+                </a>
             </div>
         </div>
 
-        <!--Gallery Preview-->
-        <div class="row gallery">
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/800" alt="" class="w-100"/>
+        <!--Custom Purchase Form-->
+        <div class="row px-3 mb-5">
+            <h3 class="col-12 text-center mt-5">BUY CUSTOM</h3>
+            <div class="col-12 px-4">
+                <p class="mt-2">We carry a limited stock for sale, but we're happy to work with you to create something you love. If you have a custom request, submit it here.</p>
+                <p class="mt-n2"><em id="customDisclaimer">Please allow for 1-2 business days for response.</em></p>
             </div>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/801" alt="" class="w-100" />
-            </div>
-            <a class="btn pt-3"><h5>Check Out the Gallery</h5></a>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/802" alt="" class="w-100"/>
-            </div>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/803" alt="" class="w-100" />
-            </div>
-        </div>
-
-        <!--Featured Blog Article-->
-        <div class="row featuredArticle">
-            <div class="media">
-                <img src="https://picsum.photos/600" alt="" class="img-fluid mr-2" style="max-width: 55%;">
-                <div class="media-body" id="featuredArticleBody">
-                    <p id="homeArticleTitle">Making a Birdhouse</p>
-                    <p id="homeArticleShort">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <p id="homeArticleText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis consectetur consequatur, at voluptatem harum odio unde quos doloremque modi magni commodi provident facere? Quod maxime fugiat quasi quae illum?</p>
-                    <a href="#">Read more ></a>
-                </div>
-            </div>
+            <form action="" class="col-12">
+                <textarea class="form-control" name="customForm" id="customForm" cols="" rows="7" placeholder="Describe your order here"></textarea>
+                <button type="submit" class="btn btn-secondary mt-3">Submit Order</button>
+            </form>
         </div>
 
     </div>
