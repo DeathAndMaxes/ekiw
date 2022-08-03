@@ -4,7 +4,7 @@ $color-header-pale: #cef7d9;
 $color-header-dark: rgb(43, 65, 44);
 $color-footer-dark: #d4f7dd;
 $color-footer-light: #FFFFFF;
-$color-black-transparent: rgba(0, 0, 0, 0.5);
+$color-black-transparent: rgba(0, 0, 0, 0.7);
 $color-gradient-light: #5cdd66;
 $color-gradient-mid: #51c54d;
 $color-gradient-dark: #106b1f;
@@ -17,6 +17,12 @@ $color-login: #253634;
 // Font Variables
 $body-font: "Open Sans", sans-serif;
 $header-font: "Montserrat", "Lobster", cursive;
+
+// Bootstrap Breakpoint Variables
+$bootstrap-sm: 576px;
+$bootstrap-md: 768px;
+$bootstrap-lg: 992px;
+$bootstrap-xl: 1200px;
 
 *::before, *, *::after {
     margin: 0;
@@ -69,17 +75,6 @@ header {
     background-color: $color-black-transparent;
 }
 
-.carousel {
-    border: none;
-}
-
-#carouselButton {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 100;
-}
-
 #reserveModal {
     .modal-header {
         background-color: $color-teal;
@@ -101,12 +96,19 @@ header {
     border: none;
 }
 
+.navbtn {
+    position: relative;
+}
+
 .navbtn:focus {
     box-shadow: none;
 }
 
-#navSearchIcon {
+#navSearchBtn {
     z-index: 999;
+    i {
+        color: $color-login;
+    }
 }
 
 #loginButton {
@@ -150,12 +152,24 @@ header {
     }
 }
 
-.homeArticleText {
+#homeArticleText {
+    font-size: small;
+    color: white;
+    display: none;
+}
+
+#homeArticleShort {
     font-size: small;
     color: white;
 }
 
-.homeArticleTitle {
+@media only screen and (max-width: 340px) {
+    #homeArticleShort {
+        display: none;
+    }
+}
+
+#homeArticleTitle {
     color: white;
     font-weight: bold;
 }
@@ -180,6 +194,11 @@ header {
             position: absolute;
         }
     }
+    @media only screen and (min-width: $bootstrap-lg) {
+        .btn-social-icon {
+            margin: 0 2rem;
+        }
+    }
 }
 
 .footerInfo {
@@ -202,3 +221,62 @@ header {
     font-weight: lighter;
     font-size: x-small;
 }
+
+#navLogo {
+    max-width: 125px;
+    position: relative;
+}
+
+#featuredArticleBody {
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    p {
+        margin-bottom: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-sm) {
+    #navLogo {
+        max-width: 150px;
+    }
+
+    #homeArticleText {
+        display: block;
+    }
+
+    #homeArticleShort {
+        display: none;
+    }
+
+    #featuredArticleBody {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-md) {
+    #navLogo {
+        max-width: 175px;
+    }
+
+    .featuredArticle.img {
+        max-height: 200px;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-lg) {
+    #navLogo {
+        max-width: 200px;
+    }
+
+    #featuredArticleBody {
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-xl) {
+    #navLogo {
+        max-width: 225px;
+    }
+}
+

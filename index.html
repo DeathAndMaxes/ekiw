@@ -12,7 +12,7 @@
     <!--Additional CSS must be placed after Bootstrap CSS-->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Lobster|Open+Sans" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat|Lobster|Open+Sans" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Everyone Knows It's Wendy</title>
@@ -21,38 +21,46 @@
 <body>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-        <div class="container">
-            <!--Hamburger Menu-->
-            <button class="btn navbtn" type="button" data-toggle="collapse" data-target="#navbarItems">
-                <i class="fa fa-navicon fa-lg text-white"></i>
-            </button>
-            <!--Navbar Branding-->
-            <a class="navbar-brand mt-1" href="#"><img src="img/EKIW_logo.png" width="125" /></a>
-            <!--Navbar Shopping Cart-->
-            <a href="" class="btn navbtn">
-                <i class="fa fa-shopping-basket fa-lg text-white"></i>
-            </a>
-            <!--Navbar Menu-->
-            <div class="collapse navbar-collapse" id="navbarItems">
-                <form class="form-inline mt-3">
-                    <input type="search" placeholder="Search..." class="form-control col-11" aria-label="Search">
-                    <button class="btn navbtn col-1" type="submit" id="navSearchIcon">
-                        <i class="fa fa-search text-white"></i>
+    <nav class="navbar navbar-dark sticky-top">
+        <div class="container-fluid justify-content-center">
+            <div class="row align-items-center">
+                <!--Hamburger Menu-->
+                <div>
+                    <button class="btn navbtn mr-4 mr-sm-5" type="button" data-toggle="collapse" data-target="#navbarItems" style="right: 1rem;">
+                        <i class="fa fa-navicon fa-lg text-white"></i>
                     </button>
-                </form>
-                <ul class="navbar-nav mt-3">
-                    <li class="nav-item col-8 ml-n2 active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
-                    <li class="nav-item col-8 ml-n2"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg mr-2"></i> About</a></li>
-                    <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-list fa-lg mr-2"></i> Sites</a></li>
-                    <li class="nav-item col-8 ml-n2"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg mr-2"></i> Contact</a></li>
-                </ul>
-                <span class="navbar-text mt-n4 mb-2 btn btn-primary btn-sm float-right" id="loginButton">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
-                        <i class="fa fa-sign-in fa-lg mr-1"></i> Login
+                </div>
+                <!--Navbar Branding-->
+                <div class="text-center">
+                    <a class="navbar-brand mx-auto" href="#"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
+                </div>
+                <!--Navbar Shopping Cart-->
+                <div>
+                    <a href="#" class="btn navbtn ml-4 ml-sm-5" style="left: 1rem;">
+                        <i class="fa fa-shopping-basket fa-lg text-white"></i>
                     </a>
-                </span>
+                </div>
             </div>
+        </div>
+        <!--Navbar Menu-->
+        <div class="collapse navbar-collapse" id="navbarItems">
+            <form class="form-inline my-2 justify-content-center">
+                <input type="search" placeholder="Search..." class="form-control col-9 col-sm-7" aria-label="Search">
+                <button class="btn navbtn ml-2" type="submit" id="navSearchBtn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </form>
+            <ul class="navbar-nav ml-sm-5">
+                <li class="nav-item col-8 ml-n2 active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-shopping-bag fa-lg mr-2"></i> Shop</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-photo fa-lg mr-2"></i> Gallery</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-newspaper-o fa-lg mr-2"></i> Blog</a></li>
+            </ul>
+            <span class="navbar-text mt-n4 mb-2 mr-sm-5 btn btn-primary btn-sm float-right" id="loginButton">
+                <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-sign-in fa-lg mr-1"></i> Login
+                </a>
+            </span>
         </div>
     </nav>
 
@@ -105,18 +113,20 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://picsum.photos/500" alt="Breadcrumb Trail Campground" class="d-block w-100" />
-                        <div class="carousel-caption">
-                            <h4>Breadcrumb Trail Campground</h4>
-                            <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten path, hike-in-only campground.</p>
-                        </div>
+                        <a href="#">
+                            <img src="https://picsum.photos/2000" alt="Breadcrumb Trail Campground" class="d-block w-100" />
+                            <div class="carousel-caption">
+                                <h4>Handmade Resin Coasters</h4>
+                            </div>
+                        </a>
                     </div>
                     <div class="carousel-item">
-                        <img src="https://picsum.photos/501" alt="React Lake Campground" class="d-block w-100" />
-                        <div class="carousel-caption">
-                            <h4>React Lake Campground</h4>
-                            <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campround on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                        </div>
+                        <a href="#">
+                            <img src="https://picsum.photos/2001" alt="React Lake Campground" class="d-block w-100" />
+                            <div class="carousel-caption">
+                                <h4>Gemstone Earrings</h4>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
@@ -156,11 +166,14 @@
 
         <!--Featured Blog Article-->
         <div class="row featuredArticle">
-            <img src="https://picsum.photos/1000" alt="" class="col-7 p-0">
-            <div class="col-5 pb-2">
-                <p class="mt-2 mr-3 homeArticleTitle">Blog Article Title</p>
-                <p class="homeArticleText mr-2 mt-n2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore, aliquid minus quam distinctio laboriosam nulla...</p>
-                <a href="">Read more ></a>
+            <div class="media">
+                <img src="https://picsum.photos/600" alt="" class="img-fluid mr-2" style="max-width: 55%;">
+                <div class="media-body" id="featuredArticleBody">
+                    <p id="homeArticleTitle">Making a Birdhouse</p>
+                    <p id="homeArticleShort">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p id="homeArticleText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis consectetur consequatur, at voluptatem harum odio unde quos doloremque modi magni commodi provident facere? Quod maxime fugiat quasi quae illum?</p>
+                    <a href="#">Read more ></a>
+                </div>
             </div>
         </div>
 

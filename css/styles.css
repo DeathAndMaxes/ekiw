@@ -35,16 +35,7 @@ header h2, header h4 {
   text-decoration: none; }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); }
-
-.carousel {
-  border: none; }
-
-#carouselButton {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: 100; }
+  background-color: rgba(0, 0, 0, 0.7); }
 
 #reserveModal .modal-header {
   background-color: #17A2B8;
@@ -59,11 +50,16 @@ header h2, header h4 {
 #navbar-toggler {
   border: none; }
 
+.navbtn {
+  position: relative; }
+
 .navbtn:focus {
   box-shadow: none; }
 
-#navSearchIcon {
+#navSearchBtn {
   z-index: 999; }
+  #navSearchBtn i {
+    color: #253634; }
 
 #loginButton {
   background-color: #e07de4;
@@ -91,18 +87,27 @@ header h2, header h4 {
     align-self: center;
     position: absolute;
     z-index: 999;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     border: none;
     color: white;
     font-weight: bolder; }
   .gallery .btn:active {
     background-color: black; }
 
-.homeArticleText {
+#homeArticleText {
+  font-size: small;
+  color: white;
+  display: none; }
+
+#homeArticleShort {
   font-size: small;
   color: white; }
 
-.homeArticleTitle {
+@media only screen and (max-width: 340px) {
+  #homeArticleShort {
+    display: none; } }
+
+#homeArticleTitle {
   color: white;
   font-weight: bold; }
 
@@ -122,6 +127,9 @@ header h2, header h4 {
     .socialFooter .btn-social-icon i {
       margin-top: 0.2rem;
       position: absolute; }
+  @media only screen and (min-width: 992px) {
+    .socialFooter .btn-social-icon {
+      margin: 0 2rem; } }
 
 .footerInfo {
   background-color: #e07de4; }
@@ -138,3 +146,40 @@ header h2, header h4 {
 #copyrightStatement {
   font-weight: lighter;
   font-size: x-small; }
+
+#navLogo {
+  max-width: 125px;
+  position: relative; }
+
+#featuredArticleBody {
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem; }
+  #featuredArticleBody p {
+    margin-bottom: 0.2rem; }
+
+@media only screen and (min-width: 576px) {
+  #navLogo {
+    max-width: 150px; }
+  #homeArticleText {
+    display: block; }
+  #homeArticleShort {
+    display: none; }
+  #featuredArticleBody {
+    margin-right: 2rem; } }
+
+@media only screen and (min-width: 768px) {
+  #navLogo {
+    max-width: 175px; }
+  .featuredArticle.img {
+    max-height: 200px; } }
+
+@media only screen and (min-width: 992px) {
+  #navLogo {
+    max-width: 200px; }
+  #featuredArticleBody {
+    margin-right: 2rem; } }
+
+@media only screen and (min-width: 1200px) {
+  #navLogo {
+    max-width: 225px; } }
