@@ -338,3 +338,12 @@ header {
 .blogInlinePhoto {
     max-width: 400px;
 }
+
+#galleryModal {
+    .modal-header {
+        padding: 1rem 1.5rem;
+        .close {
+            font-size: 2rem;
+        }
+    }
+}
