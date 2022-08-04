@@ -297,3 +297,18 @@ header {
         color: black;
     }
 }
+
+.breadcrumb-item {
+    a {
+        color: $color-login-button;
+    }
+}
+
+#productQuantity {
+    border: $color-login solid 0.2px;
+    height: 2rem;
+}
+
+#productDisclaimer {
+    font-size: smaller;
+}

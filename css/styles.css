@@ -195,3 +195,13 @@ header h2, header h4 {
 
 .productItem a {
   color: black; }
+
+.breadcrumb-item a {
+  color: #e07de4; }
+
+#productQuantity {
+  border: #253634 solid 0.2px;
+  height: 2rem; }
+
+#productDisclaimer {
+  font-size: smaller; }
