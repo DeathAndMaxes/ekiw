@@ -113,10 +113,6 @@ header h2, header h4 {
 
 .featuredArticle {
   background-color: #2b7972; }
-  .featuredArticle a {
-    color: #e07de4;
-    font-weight: bolder;
-    font-size: small; }
 
 .socialFooter {
   min-height: 70px; }
@@ -205,3 +201,27 @@ header h2, header h4 {
 
 #productDisclaimer {
   font-size: smaller; }
+
+.blogArticle {
+  overflow: hidden;
+  margin-top: 3rem;
+  max-width: 600px; }
+
+.articleSnippet {
+  font-size: small; }
+
+.readMoreLink {
+  color: #e07de4;
+  font-weight: bolder;
+  font-size: small; }
+
+.aboutWendy {
+  background-color: #2b7972;
+  justify-content: center; }
+  .aboutWendy img {
+    max-width: 400px; }
+  .aboutWendy p {
+    max-width: 600px; }
+
+.blogInlinePhoto {
+  max-width: 400px; }

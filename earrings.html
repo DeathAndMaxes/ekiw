@@ -32,7 +32,7 @@
                 </div>
                 <!--Navbar Branding-->
                 <div class="text-center">
-                    <a class="navbar-brand mx-auto" href="#"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
+                    <a class="navbar-brand mx-auto" href="index.html"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
                 </div>
                 <!--Navbar Shopping Cart-->
                 <div>
@@ -51,10 +51,10 @@
                 </button>
             </form>
             <ul class="navbar-nav ml-sm-5">
-                <li class="nav-item col-8 ml-n2 active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="store.html"><i class="fa fa-shopping-bag fa-lg mr-2"></i> Shop</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-photo fa-lg mr-2"></i> Gallery</a></li>
-                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="blog.html"><i class="fa fa-newspaper-o fa-lg mr-2"></i> Blog</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-newspaper-o fa-lg mr-2"></i> Blog</a></li>
             </ul>
             <span class="navbar-text mt-n4 mb-2 mr-sm-5 btn btn-primary btn-sm float-right" id="loginButton">
                 <a role="button" data-toggle="modal" data-target="#loginModal">
@@ -104,77 +104,65 @@
 
     <div class="container">
 
-        <!--Product Carousel-->
+        <!--Breadcrumb Menu-->
         <div class="row">
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="store.html">Shop</a></li>
+                    <li class="breadcrumb-item active">Gemstone Earrings</li>
+                </ol>
+            </div>
+        </div>
+
+        <!--Product Image Carousel-->
+        <div class="row">
+            <div id="productCarousel" class="carousel slide w-75 mx-auto d-block" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+                    <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#productCarousel" data-slide-to="1"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="coasters.html">
-                            <img src="https://picsum.photos/2000" alt="Handmade resin coasters" class="d-block w-100" />
-                            <div class="carousel-caption">
-                                <h4>Handmade Resin Coasters</h4>
-                            </div>
-                        </a>
+                        <img src="https://picsum.photos/1000" alt="Photo of handmade resin coasters" class="d-block w-100" />
                     </div>
                     <div class="carousel-item">
-                        <a href="earrings.html">
-                            <img src="https://picsum.photos/2001" alt="React Lake Campground" class="d-block w-100" />
-                            <div class="carousel-caption">
-                                <h4>Gemstone Earrings</h4>
-                            </div>
-                        </a>
+                        <img src="https://picsum.photos/1001" alt="Photo of handmade resin coasters" class="d-block w-100" />
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
                     <span class="carousel-control-next-icon"></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
 
-        <!--Shop All Products-->
-        <div class="row">
-            <a href="store.html" class="col-12" id="storeShortcut">
-                <h4 class="mt-2">See All Available Products</h4>
-            </a>
+        <!--Product Information-->
+        <div class="row pr-5">
+            <h5 class="col-12 mt-4 pl-4">Gemstone Earrings</h5>
+            <p class="col-12 pl-4">$12.99</p>
+            <p class="col-12 pl-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero perspiciatis quae dolorum ipsa. Minus, sit soluta. Laudantium minima perferendis ab! Repudiandae, aspernatur dicta! Officiis, tempore officia. Corporis ipsa consequatur incidunt.</p>
+            <p class="col-12 pl-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam a possimus, quae unde facilis quos optio enim dolorum. Asperiores ullam reiciendis beatae cupiditate inventore commodi unde facere alias tenetur quo.</p>
         </div>
 
-        <!--Gallery Preview-->
-        <div class="row gallery">
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/800" alt="" class="w-100"/>
-            </div>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/801" alt="" class="w-100" />
-            </div>
-            <a class="btn pt-3"><h5>Check Out the Gallery</h5></a>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/802" alt="" class="w-100"/>
-            </div>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/803" alt="" class="w-100" />
-            </div>
-        </div>
-
-        <!--Featured Blog Article-->
-        <div class="row featuredArticle">
-            <div class="media">
-                <img src="https://picsum.photos/600" alt="" class="img-fluid mr-2" style="max-width: 55%;">
-                <div class="media-body" id="featuredArticleBody">
-                    <p id="homeArticleTitle">Making a Birdhouse</p>
-                    <p id="homeArticleShort">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <p id="homeArticleText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis consectetur consequatur, at voluptatem harum odio unde quos doloremque modi magni commodi provident facere? Quod maxime fugiat quasi quae illum?</p>
-                    <a href="birdhouse.html" class="readMoreLink">Read more ></a>
+        <!--Product Options-->
+        <div class="row mt-4 pl-4">
+            <form action="#">
+                <div class="form-group">
+                    <label for="productQuantity"><em>Quantity:</em></label>
+                    <input class="form-control col-4 mt-n1" type="number" id="productQuantity" />
                 </div>
-            </div>
+                <input type="submit" class="btn btn-secondary btn-sm px-3" value="Add to Cart">
+            </form>
+        </div>
+
+        <!--Product Disclaimer-->
+        <div class="row pl-4 mt-4 pr-5 mb-5">
+            <p id="productDisclaimer">Disclaimer-- As these items are handmade, there may be small imperfections present (e.g., minor bubbles, chips) and your delivered item may not be 100% representative of the displayed images. We think this adds uniqueness and personality to every item we create. Thank you for understanding.</p>
         </div>
 
     </div>

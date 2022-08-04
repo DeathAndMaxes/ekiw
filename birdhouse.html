@@ -32,7 +32,7 @@
                 </div>
                 <!--Navbar Branding-->
                 <div class="text-center">
-                    <a class="navbar-brand mx-auto" href="#"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
+                    <a class="navbar-brand mx-auto" href="index.html"><img src="img/EKIW_logo.png" class="img-fluid" id="navLogo" /></a>
                 </div>
                 <!--Navbar Shopping Cart-->
                 <div>
@@ -51,7 +51,7 @@
                 </button>
             </form>
             <ul class="navbar-nav ml-sm-5">
-                <li class="nav-item col-8 ml-n2 active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
+                <li class="nav-item col-8 ml-n2"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg mr-2"></i> Home</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="store.html"><i class="fa fa-shopping-bag fa-lg mr-2"></i> Shop</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="#"><i class="fa fa-photo fa-lg mr-2"></i> Gallery</a></li>
                 <li class="nav-item col-8 ml-n2"><a class="nav-link" href="blog.html"><i class="fa fa-newspaper-o fa-lg mr-2"></i> Blog</a></li>
@@ -104,77 +104,26 @@
 
     <div class="container">
 
-        <!--Product Carousel-->
+        <!--Breadcrumb Menu-->
         <div class="row">
-            <div id="homeCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <div class="col">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="blog.html">Blog</a></li>
+                    <li class="breadcrumb-item active">Making a Birdhouse</li>
                 </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="coasters.html">
-                            <img src="https://picsum.photos/2000" alt="Handmade resin coasters" class="d-block w-100" />
-                            <div class="carousel-caption">
-                                <h4>Handmade Resin Coasters</h4>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="earrings.html">
-                            <img src="https://picsum.photos/2001" alt="React Lake Campground" class="d-block w-100" />
-                            <div class="carousel-caption">
-                                <h4>Gemstone Earrings</h4>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
         </div>
 
-        <!--Shop All Products-->
-        <div class="row">
-            <a href="store.html" class="col-12" id="storeShortcut">
-                <h4 class="mt-2">See All Available Products</h4>
-            </a>
-        </div>
-
-        <!--Gallery Preview-->
-        <div class="row gallery">
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/800" alt="" class="w-100"/>
-            </div>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/801" alt="" class="w-100" />
-            </div>
-            <a class="btn pt-3"><h5>Check Out the Gallery</h5></a>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/802" alt="" class="w-100"/>
-            </div>
-            <div class="col-6 galleryPic">
-                <img src="https://picsum.photos/803" alt="" class="w-100" />
-            </div>
-        </div>
-
-        <!--Featured Blog Article-->
-        <div class="row featuredArticle">
-            <div class="media">
-                <img src="https://picsum.photos/600" alt="" class="img-fluid mr-2" style="max-width: 55%;">
-                <div class="media-body" id="featuredArticleBody">
-                    <p id="homeArticleTitle">Making a Birdhouse</p>
-                    <p id="homeArticleShort">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    <p id="homeArticleText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit veritatis consectetur consequatur, at voluptatem harum odio unde quos doloremque modi magni commodi provident facere? Quod maxime fugiat quasi quae illum?</p>
-                    <a href="birdhouse.html" class="readMoreLink">Read more ></a>
-                </div>
-            </div>
+        <!--Article-->
+        <div class="row px-2 mb-3">
+            <img src="https://picsum.photos/800/400" alt="Photo of a finished birdhouse" class="col-12 mt-4 mx-auto d-block img-fluid rounded">
+            <h3 class="col-12 my-4">Making a Birdhouse</h3>
+            <p class="col-12 col-md-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nam rem labore ducimus molestias accusamus exercitationem. Exercitationem vel alias voluptatem dolore ea, aut sequi adipisci laudantium corporis aspernatur. Facere, animi?</p>
+            <p class="col-12 col-md-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, atque ea enim tenetur vel odio rerum dicta consequatur fugit neque molestiae unde non ab asperiores blanditiis repudiandae, ipsa natus officiis!</p>
+            <img src="https://picsum.photos/400/225" alt="Photo of a birdhouse being constructed" class="col-6 col-md-8 img-fluid rounded mx-auto d-block mt-1 mb-4">
+            <p class="col-12 col-md-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur molestias odit optio aut laborum! Officiis soluta, possimus facere dolorem eius minima, sequi aspernatur labore similique deleniti beatae modi corporis quia.</p>
+            <p class="col-12 col-md-6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus qui id reprehenderit consequuntur voluptatibus autem quos fugit? Fugiat beatae eaque ad nemo pariatur numquam aliquam, accusamus asperiores. Quasi, sequi ea.</p>
         </div>
 
     </div>

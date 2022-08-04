@@ -176,11 +176,6 @@ header {
 
 .featuredArticle {
     background-color: $color-navbar;
-    a {
-        color: $color-login-button;
-        font-weight: bolder;
-        font-size: small;
-    }
 }
 
 .socialFooter {
@@ -311,4 +306,35 @@ header {
 
 #productDisclaimer {
     font-size: smaller;
+}
+
+.blogArticle {
+    overflow: hidden;
+    margin-top: 3rem;
+    max-width: 600px;
+}
+
+.articleSnippet {
+    font-size: small;
+}
+
+.readMoreLink {
+    color: $color-login-button;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.aboutWendy {
+    background-color: $color-navbar;
+    justify-content: center;
+    img {
+        max-width: 400px;
+    }
+    p {
+        max-width: 600px;
+    }
+}
+
+.blogInlinePhoto {
+    max-width: 400px;
 }
