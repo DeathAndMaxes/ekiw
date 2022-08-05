@@ -1,22 +1,12 @@
 // Color Variables
-$color-header: #236921;
-$color-header-pale: #cef7d9;
-$color-header-dark: rgb(43, 65, 44);
-$color-footer-dark: #d4f7dd;
-$color-footer-light: #FFFFFF;
 $color-black-transparent: rgba(0, 0, 0, 0.7);
-$color-gradient-light: #5cdd66;
-$color-gradient-mid: #51c54d;
-$color-gradient-dark: #106b1f;
-$color-navbar: #2b7972;
-$color-tab-border: #DDD;
-$color-teal: #17A2B8;
-$color-login-button: #e07de4;
-$color-login: #253634;
+$color-green: #2b7972;
+$color-pink: #e07de4;
+$color-dark-green: #253634;
 
 // Font Variables
 $body-font: "Open Sans", sans-serif;
-$header-font: "Montserrat", "Lobster", cursive;
+$header-font: "Montserrat", sans-serif;
 
 // Bootstrap Breakpoint Variables
 $bootstrap-sm: 576px;
@@ -34,106 +24,64 @@ body {
     font-family: $body-font;
 }
 
-h1, h2, h3, h4, h5 {
+h3, h4, h5 {
     font-family: $header-font;
     font-weight: bolder;
 }
 
-h2 {
-    color: $color-header;
-}
-
-header {
-    h2, h4 {
-        color: $color-header-pale;
+.aboutWendy {
+    background-color: $color-green;
+    justify-content: center;
+    img {
+        max-width: 400px;
     }
-} 
-
-.jumbotron {
-    margin: 0;
-    padding: 30px;
-    background-image: linear-gradient(to right, $color-gradient-light, $color-gradient-mid, $color-gradient-dark);
-    color: $color-header-dark;
+    p {
+        max-width: 600px;
+    }
 }
 
-.navbar {
-    background-color: $color-navbar;
+.articleSnippet {
+    font-size: small;
 }
 
-.tab-content {
-    border: 1px solid $color-tab-border;
-    border-top: none;
-    padding: 10px;
+.blogArticle {
+    overflow: hidden;
+    margin-top: 3rem;
+    max-width: 600px;
 }
 
-#accordion a, a:hover {
-    color: inherit;
-    text-decoration: none;
+.blogInlinePhoto {
+    max-width: 400px;
+}
+
+.breadcrumb-item {
+    a {
+        color: $color-pink;
+    }
 }
 
 .carousel-caption {
     background-color: $color-black-transparent;
 }
 
-#reserveModal {
-    .modal-header {
-        background-color: $color-teal;
-        color: white;
-        .close {
-            color: white;
-        }
-    }
+.featuredArticle {
+    background-color: $color-green;
 }
 
-#loginModal {
-    .modal-header {
-        background-color: $color-login-button;
-        color: $color-login;
-    }
-}
-
-#navbar-toggler {
-    border: none;
-}
-
-.navbtn {
-    position: relative;
-}
-
-.navbtn:focus {
-    box-shadow: none;
-}
-
-#navSearchBtn {
-    z-index: 999;
-    i {
-        color: $color-login;
-    }
-}
-
-#loginButton {
-    background-color: $color-login-button;
-    border: none;
-    z-index: 999;
+.footerInfo {
+    background-color: $color-pink;
     a {
-        color: $color-login;        
+        color: white;
+        text-decoration: underline;
     }
-}
-
-#homeGallery {
-    background-color: $color-login-button;
-}
-
-#storeShortcut {
-    text-align: center;
-    text-justify: center;
-    background-color: $color-login-button;
-    color: $color-login;
-    padding: 0.75rem;
-}
-
-.galleryPic {
-    padding: 0;
+    a:active {
+        color: black;
+    }
+    p {
+        color: white;
+        font-weight: bold;
+        font-size: small;
+    }
 }
 
 .gallery {
@@ -152,30 +100,40 @@ header {
     }
 }
 
-#homeArticleText {
-    font-size: small;
-    color: white;
-    display: none;
+.galleryPic {
+    padding: 0;
 }
 
-#homeArticleShort {
-    font-size: small;
-    color: white;
+.navbar {
+    background-color: $color-green;
 }
 
-@media only screen and (max-width: 340px) {
-    #homeArticleShort {
-        display: none;
+.navbtn {
+    position: relative;
+}
+
+.navbtn:focus {
+    box-shadow: none;
+}
+
+.productItem {
+    a {
+        color: black;
     }
 }
 
-#homeArticleTitle {
-    color: white;
-    font-weight: bold;
+.productName {
+    font-weight: bolder;
 }
 
-.featuredArticle {
-    background-color: $color-navbar;
+.productPicture {
+    border-radius: 10%;
+}
+
+.readMoreLink {
+    color: $color-pink;
+    font-weight: bolder;
+    font-size: small;
 }
 
 .socialFooter {
@@ -189,27 +147,6 @@ header {
             position: absolute;
         }
     }
-    @media only screen and (min-width: $bootstrap-lg) {
-        .btn-social-icon {
-            margin: 0 2rem;
-        }
-    }
-}
-
-.footerInfo {
-    background-color: $color-login-button;
-    p {
-        color: white;
-        font-weight: bold;
-        font-size: small;
-    }
-    a {
-        color: white;
-        text-decoration: underline;
-    }
-    a:active {
-        color: black;
-    }
 }
 
 #copyrightStatement {
@@ -217,9 +154,8 @@ header {
     font-size: x-small;
 }
 
-#navLogo {
-    max-width: 125px;
-    position: relative;
+#customDisclaimer {
+    font-size: smaller;
 }
 
 #featuredArticleBody {
@@ -231,119 +167,128 @@ header {
     }
 }
 
-@media only screen and (min-width: $bootstrap-sm) {
-    #navLogo {
-        max-width: 150px;
-    }
-
-    #homeArticleText {
-        display: block;
-    }
-
-    #homeArticleShort {
-        display: none;
-    }
-
-    #featuredArticleBody {
-        margin-right: 2rem;
-    }
-}
-
-@media only screen and (min-width: $bootstrap-md) {
-    #navLogo {
-        max-width: 175px;
-    }
-
-    .featuredArticle.img {
-        max-height: 200px;
-    }
-}
-
-@media only screen and (min-width: $bootstrap-lg) {
-    #navLogo {
-        max-width: 200px;
-    }
-
-    #featuredArticleBody {
-        margin-right: 2rem;
-    }
-}
-
-@media only screen and (min-width: $bootstrap-xl) {
-    #navLogo {
-        max-width: 225px;
-    }
-}
-
-.productPicture {
-    border-radius: 10%;
-}
-
-.productName {
-    font-weight: bolder;
-}
-
-#customDisclaimer {
-    font-size: smaller;
-}
-
-.productItem {
-    a {
-        color: black;
-    }
-}
-
-.breadcrumb-item {
-    a {
-        color: $color-login-button;
-    }
-}
-
-#productQuantity {
-    border: $color-login solid 0.2px;
-    height: 2rem;
-}
-
-#productDisclaimer {
-    font-size: smaller;
-}
-
-.blogArticle {
-    overflow: hidden;
-    margin-top: 3rem;
-    max-width: 600px;
-}
-
-.articleSnippet {
-    font-size: small;
-}
-
-.readMoreLink {
-    color: $color-login-button;
-    font-weight: bolder;
-    font-size: small;
-}
-
-.aboutWendy {
-    background-color: $color-navbar;
-    justify-content: center;
-    img {
-        max-width: 400px;
-    }
-    p {
-        max-width: 600px;
-    }
-}
-
-.blogInlinePhoto {
-    max-width: 400px;
-}
-
 #galleryModal {
     .modal-header {
         padding: 1rem 1.5rem;
         .close {
             font-size: 2rem;
         }
+    }
+}
+
+#homeArticleShort {
+    font-size: small;
+    color: white;
+}
+
+#homeArticleText {
+    font-size: small;
+    color: white;
+    display: none;
+}
+
+#homeArticleTitle {
+    color: white;
+    font-weight: bold;
+}
+
+#loginButton {
+    background-color: $color-pink;
+    border: none;
+    z-index: 999;
+    a {
+        color: $color-dark-green;        
+    }
+}
+
+#loginModal {
+    .modal-header {
+        background-color: $color-pink;
+        color: $color-dark-green;
+    }
+}
+
+#navLogo {
+    max-width: 125px;
+    position: relative;
+}
+
+#navSearchBtn {
+    z-index: 999;
+    i {
+        color: $color-dark-green;
+    }
+}
+
+#productDisclaimer {
+    font-size: smaller;
+}
+
+#productQuantity {
+    border: $color-dark-green solid 0.2px;
+    height: 2rem;
+}
+
+#storeShortcut {
+    text-align: center;
+    text-justify: center;
+    background-color: $color-pink;
+    color: $color-dark-green;
+    padding: 0.75rem;
+}
+
+@media only screen and (max-width: 340px) {
+    #homeArticleShort {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-sm) {
+    #featuredArticleBody {
+        margin-right: 2rem;
+    }
+    
+    #homeArticleShort {
+        display: none;
+    }
+
+    #homeArticleText {
+        display: block;
+    }
+
+    #navLogo {
+        max-width: 150px;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-md) {
+    .featuredArticle.img {
+        max-height: 200px;
+    }
+
+    #navLogo {
+        max-width: 175px;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-lg) {
+    .socialFooter {
+        .btn-social-icon {
+            margin: 0 2rem;
+        }
+    }
+    
+    #featuredArticleBody {
+        margin-right: 2rem;
+    }
+
+    #navLogo {
+        max-width: 200px;
+    }
+}
+
+@media only screen and (min-width: $bootstrap-xl) {
+    #navLogo {
+        max-width: 225px;
     }
 }

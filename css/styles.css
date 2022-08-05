@@ -6,80 +6,49 @@
 body {
   font-family: "Open Sans", sans-serif; }
 
-h1, h2, h3, h4, h5 {
-  font-family: "Montserrat", "Lobster", cursive;
+h3, h4, h5 {
+  font-family: "Montserrat", sans-serif;
   font-weight: bolder; }
 
-h2 {
-  color: #236921; }
+.aboutWendy {
+  background-color: #2b7972;
+  justify-content: center; }
+  .aboutWendy img {
+    max-width: 400px; }
+  .aboutWendy p {
+    max-width: 600px; }
 
-header h2, header h4 {
-  color: #cef7d9; }
+.articleSnippet {
+  font-size: small; }
 
-.jumbotron {
-  margin: 0;
-  padding: 30px;
-  background-image: linear-gradient(to right, #5cdd66, #51c54d, #106b1f);
-  color: #2b412c; }
+.blogArticle {
+  overflow: hidden;
+  margin-top: 3rem;
+  max-width: 600px; }
 
-.navbar {
-  background-color: #2b7972; }
+.blogInlinePhoto {
+  max-width: 400px; }
 
-.tab-content {
-  border: 1px solid #DDD;
-  border-top: none;
-  padding: 10px; }
-
-#accordion a, a:hover {
-  color: inherit;
-  text-decoration: none; }
+.breadcrumb-item a {
+  color: #e07de4; }
 
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.7); }
 
-#reserveModal .modal-header {
-  background-color: #17A2B8;
-  color: white; }
-  #reserveModal .modal-header .close {
-    color: white; }
+.featuredArticle {
+  background-color: #2b7972; }
 
-#loginModal .modal-header {
-  background-color: #e07de4;
-  color: #253634; }
-
-#navbar-toggler {
-  border: none; }
-
-.navbtn {
-  position: relative; }
-
-.navbtn:focus {
-  box-shadow: none; }
-
-#navSearchBtn {
-  z-index: 999; }
-  #navSearchBtn i {
-    color: #253634; }
-
-#loginButton {
-  background-color: #e07de4;
-  border: none;
-  z-index: 999; }
-  #loginButton a {
-    color: #253634; }
-
-#homeGallery {
+.footerInfo {
   background-color: #e07de4; }
-
-#storeShortcut {
-  text-align: center;
-  text-justify: center;
-  background-color: #e07de4;
-  color: #253634;
-  padding: 0.75rem; }
-
-.galleryPic {
-  padding: 0; }
+  .footerInfo a {
+    color: white;
+    text-decoration: underline; }
+  .footerInfo a:active {
+    color: black; }
+  .footerInfo p {
+    color: white;
+    font-weight: bold;
+    font-size: small; }
 
 .gallery {
   justify-content: center; }
@@ -94,25 +63,31 @@ header h2, header h4 {
   .gallery .btn:active {
     background-color: black; }
 
-#homeArticleText {
-  font-size: small;
-  color: white;
-  display: none; }
+.galleryPic {
+  padding: 0; }
 
-#homeArticleShort {
-  font-size: small;
-  color: white; }
-
-@media only screen and (max-width: 340px) {
-  #homeArticleShort {
-    display: none; } }
-
-#homeArticleTitle {
-  color: white;
-  font-weight: bold; }
-
-.featuredArticle {
+.navbar {
   background-color: #2b7972; }
+
+.navbtn {
+  position: relative; }
+
+.navbtn:focus {
+  box-shadow: none; }
+
+.productItem a {
+  color: black; }
+
+.productName {
+  font-weight: bolder; }
+
+.productPicture {
+  border-radius: 10%; }
+
+.readMoreLink {
+  color: #e07de4;
+  font-weight: bolder;
+  font-size: small; }
 
 .socialFooter {
   min-height: 70px; }
@@ -123,29 +98,13 @@ header h2, header h4 {
     .socialFooter .btn-social-icon i {
       margin-top: 0.2rem;
       position: absolute; }
-  @media only screen and (min-width: 992px) {
-    .socialFooter .btn-social-icon {
-      margin: 0 2rem; } }
-
-.footerInfo {
-  background-color: #e07de4; }
-  .footerInfo p {
-    color: white;
-    font-weight: bold;
-    font-size: small; }
-  .footerInfo a {
-    color: white;
-    text-decoration: underline; }
-  .footerInfo a:active {
-    color: black; }
 
 #copyrightStatement {
   font-weight: lighter;
   font-size: x-small; }
 
-#navLogo {
-  max-width: 125px;
-  position: relative; }
+#customDisclaimer {
+  font-size: smaller; }
 
 #featuredArticleBody {
   margin-right: 1rem;
@@ -154,79 +113,86 @@ header h2, header h4 {
   #featuredArticleBody p {
     margin-bottom: 0.2rem; }
 
-@media only screen and (min-width: 576px) {
-  #navLogo {
-    max-width: 150px; }
-  #homeArticleText {
-    display: block; }
-  #homeArticleShort {
-    display: none; }
-  #featuredArticleBody {
-    margin-right: 2rem; } }
+#galleryModal .modal-header {
+  padding: 1rem 1.5rem; }
+  #galleryModal .modal-header .close {
+    font-size: 2rem; }
 
-@media only screen and (min-width: 768px) {
-  #navLogo {
-    max-width: 175px; }
-  .featuredArticle.img {
-    max-height: 200px; } }
+#homeArticleShort {
+  font-size: small;
+  color: white; }
 
-@media only screen and (min-width: 992px) {
-  #navLogo {
-    max-width: 200px; }
-  #featuredArticleBody {
-    margin-right: 2rem; } }
+#homeArticleText {
+  font-size: small;
+  color: white;
+  display: none; }
 
-@media only screen and (min-width: 1200px) {
-  #navLogo {
-    max-width: 225px; } }
+#homeArticleTitle {
+  color: white;
+  font-weight: bold; }
 
-.productPicture {
-  border-radius: 10%; }
+#loginButton {
+  background-color: #e07de4;
+  border: none;
+  z-index: 999; }
+  #loginButton a {
+    color: #253634; }
 
-.productName {
-  font-weight: bolder; }
+#loginModal .modal-header {
+  background-color: #e07de4;
+  color: #253634; }
 
-#customDisclaimer {
+#navLogo {
+  max-width: 125px;
+  position: relative; }
+
+#navSearchBtn {
+  z-index: 999; }
+  #navSearchBtn i {
+    color: #253634; }
+
+#productDisclaimer {
   font-size: smaller; }
-
-.productItem a {
-  color: black; }
-
-.breadcrumb-item a {
-  color: #e07de4; }
 
 #productQuantity {
   border: #253634 solid 0.2px;
   height: 2rem; }
 
-#productDisclaimer {
-  font-size: smaller; }
+#storeShortcut {
+  text-align: center;
+  text-justify: center;
+  background-color: #e07de4;
+  color: #253634;
+  padding: 0.75rem; }
 
-.blogArticle {
-  overflow: hidden;
-  margin-top: 3rem;
-  max-width: 600px; }
+@media only screen and (max-width: 340px) {
+  #homeArticleShort {
+    display: none; } }
 
-.articleSnippet {
-  font-size: small; }
+@media only screen and (min-width: 576px) {
+  #featuredArticleBody {
+    margin-right: 2rem; }
+  #homeArticleShort {
+    display: none; }
+  #homeArticleText {
+    display: block; }
+  #navLogo {
+    max-width: 150px; } }
 
-.readMoreLink {
-  color: #e07de4;
-  font-weight: bolder;
-  font-size: small; }
+@media only screen and (min-width: 768px) {
+  .featuredArticle.img {
+    max-height: 200px; }
+  #navLogo {
+    max-width: 175px; } }
 
-.aboutWendy {
-  background-color: #2b7972;
-  justify-content: center; }
-  .aboutWendy img {
-    max-width: 400px; }
-  .aboutWendy p {
-    max-width: 600px; }
+@media only screen and (min-width: 992px) {
+  .socialFooter .btn-social-icon {
+    margin: 0 2rem; }
+  #featuredArticleBody {
+    margin-right: 2rem; }
+  #navLogo {
+    max-width: 200px; } }
 
-.blogInlinePhoto {
-  max-width: 400px; }
-
-#galleryModal .modal-header {
-  padding: 1rem 1.5rem; }
-  #galleryModal .modal-header .close {
-    font-size: 2rem; }
+@media only screen and (min-width: 1200px) {
+  #navLogo {
+    max-width: 225px; } }
